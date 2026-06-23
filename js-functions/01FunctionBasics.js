@@ -68,3 +68,20 @@ console.log(sum(4.7, 9.8));
 setTimeout(function(){
     console.log("Exectued");
 }, 1000);
+
+/*
+8. Callback Functions
+
+-> A function passed into another function.
+*/
+
+function greet(name, callback){
+    console.log(`Hello ${name}`);
+    callback();
+}
+
+function done(){
+    console.log("Hello from callback function");
+}
+
+greet(name, done());
