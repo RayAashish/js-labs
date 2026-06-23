@@ -59,3 +59,12 @@ console.log(area(10, 7.4));
 
 const sum = (a, b) => a + b;
 console.log(sum(4.7, 9.8));
+
+/*
+7. Anonymous Functions
+-> Function without a name.
+*/
+
+setTimeout(function(){
+    console.log("Exectued");
+}, 1000);
