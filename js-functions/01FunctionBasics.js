@@ -85,3 +85,9 @@ function done(){
 }
 
 greet(name, done());
+
+function fnn(){
+    console.log("I didn't code today");
+}
+
+fnn();
