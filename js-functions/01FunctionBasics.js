@@ -91,3 +91,6 @@ function fnn(){
 }
 
 fnn();
+
+user = "sjya";
+console("Why??");
