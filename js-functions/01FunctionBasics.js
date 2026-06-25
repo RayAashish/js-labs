@@ -105,7 +105,7 @@ function higherOrder( fn){
     return fn(a, b);
 }
 
-const fn = (a, b) => Math.pow(a, b);
+const fnnn = (a, b) => Math.pow(a, b);
 
-const result = higherOrder(fn(2, 8));
+const result = higherOrder(fnnn(2, 8));
 console.log(result);
