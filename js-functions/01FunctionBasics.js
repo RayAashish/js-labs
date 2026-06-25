@@ -86,11 +86,26 @@ function done(){
 
 greet(name, done());
 
-function fnn(){
-    console.log("I didn't code today");
+// function fnn(){
+//     console.log("I didn't code today");
+// }
+
+// fnn();
+
+/*
+9. Higher Order Functions
+
+A function that:
+
+-> accepts another function
+-> returns another function
+*/
+
+function higherOrder( fn){
+    return fn(a, b);
 }
 
-fnn();
+const fn = (a, b) => Math.pow(a, b);
 
-user = "sjya";
-console("Why??");
+const result = higherOrder(fn(2, 8));
+console.log(result);
