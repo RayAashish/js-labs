@@ -75,7 +75,7 @@ setTimeout(function(){
 -> A function passed into another function.
 */
 
-function greet(name, callback){
+function hello(name, callback){
     console.log(`Hello ${name}`);
     callback();
 }
@@ -84,7 +84,7 @@ function done(){
     console.log("Hello from callback function");
 }
 
-greet(name, done());
+hello("Aashish", done);
 
 // function fnn(){
 //     console.log("I didn't code today");
@@ -101,11 +101,11 @@ A function that:
 -> returns another function
 */
 
-function higherOrder( fn){
+function higherOrder(a, b, fn){
     return fn(a, b);
 }
 
-const fnnn = (a, b) => Math.pow(a, b);
+const powFun = (a, b) => Math.pow(a, b);
 
-const result = higherOrder(fnnn(2, 8));
+let result = higherOrder(2, 8, powFun());
 console.log(result);
