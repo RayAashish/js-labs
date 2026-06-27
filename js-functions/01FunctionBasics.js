@@ -101,11 +101,22 @@ A function that:
 -> returns another function
 */
 
-function higherOrder(a, b, fn){
-    return fn(a, b);
+// function higherOrder(a, b, fn){
+//     return fn(a, b);
+// }
+
+// const powFun = (a, b) => Math.pow(a, b);
+
+// let result = higherOrder(2, 8, powFun());
+// console.log(result);
+
+
+//Default parameters
+function checkDefault(name = "Aashish"){
+    console.log(`Hello from default : ${name}`);
 }
 
-const powFun = (a, b) => Math.pow(a, b);
+checkDefault("Ray");
+checkDefault();
 
-let result = higherOrder(2, 8, powFun());
-console.log(result);
+//
