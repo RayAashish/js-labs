@@ -119,4 +119,11 @@ function checkDefault(name = "Aashish"){
 checkDefault("Ray");
 checkDefault();
 
-//
+// Rest parameters
+
+function square(...nums){
+    for (let i = 0; i < nums.length; i++){
+        console.log(Math.pow(nums[i], 2));
+    }
+}
+square(2, 3, 5, 4);
