@@ -5,3 +5,6 @@ for (let p of person){
     console.log(p);
 }
 
+// Modifcation in array
+person[0] = "Ray"; 
+console.log(person);
