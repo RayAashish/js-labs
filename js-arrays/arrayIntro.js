@@ -8,3 +8,4 @@ for (let p of person){
 // Modifcation in array
 person[0] = "Ray"; 
 console.log(person);
+
